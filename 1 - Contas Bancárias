@@ -52,7 +52,6 @@ class ContaEspecial extends ContaBancaria {
         this.limite = limite;
     }
 
-    @Override
     public void sacar(float valor) {
         if (valor <= saldo + limite) {
             saldo -= valor;
